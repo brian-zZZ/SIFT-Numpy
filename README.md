@@ -42,10 +42,10 @@ Matching result is illustrated in figure 1 below. \
 As a comparison, official implementation from ```cv2``` spends only 2 seconds, matching result is illustrated in figure 2.
 <p align="center">
 <img src="results/match_fig.png" width="800" alt="From scratch">
-<img src="results/cv2_matching.png" width="500" alt="cv2">
+<img src="results/cv2_matching.png" width="600" alt="cv2">
 </p>
 
-Judging from the matching results, as one can tell, over the testing images, the official ```cv2``` implementation is even worse than mine, obviously lots features in the upper left corner of the left image wert incorrectly matched to the features in the lower right corner of the right image, even though it's much efficient (two orders of magnitude faster).
+Judging from the matching results, as one can tell, over the testing images, the official ```cv2``` implementation is even worse than mine, obviously lots features in the upper left corner of the left image were incorrectly matched to the features in the lower right corner of the right image, even though it's much efficient (two orders of magnitude faster).
 
 
 ## Requirements
