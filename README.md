@@ -54,3 +54,7 @@ This implemenation requires only three three-party libraries: ```Numpy, pillow, 
 - ```pillow``` provides images loading and resizing functions.
 - ```matplotlib``` provides visualization function.
 > For detailed version, check ```src/requirements.txt```
+
+
+## Info
+Brian Zhang, MS student of AI College, UCAS.
