@@ -2,7 +2,7 @@
 This implementation is based on two paper:
 - [Distinctive Image Features from Scale-Invariant Keypoints](https://www.cs.ubc.ca/~lowe/papers/ijcv04.pdf), David G. Lowe.
 - [The Anatomy of the SIFT Method](http://www.ipol.im/pub/art/2014/82/article.pdf), Ives Rey Otero, Mauricio Delbracio.
-> Notice: The later one provides a detailed analysis and better parameters' setting of SIFT, thus this implementation utilize \
+> Notice: The later one provides a detailed analysis and better parameters' setting of SIFT, thus this implementation utilize 
 its parameters's setting as standard configuration.
 
 
@@ -21,8 +21,8 @@ its parameters's setting as standard configuration.
 ## Usage
 This implemenation provides two ways to launch the SIFT:
 
-### Run with executable file (sift.exe)**
-1. Put the two images to be detected to directory ```imgs```. \
+### Run with executable file (sift.exe)
+1. Put the two to be detected images to directory ```imgs```.
 > Notice: ```imgs``` folder lies in the same path as the main file (sift.py)
 2. Run ```sift.exe```, monitor running logs in command, find result in the popup plot figure.
 
@@ -39,17 +39,17 @@ python sift.py
 ### Matching results
 It takes two and a half minutes to finish SIFT detecting and matching in two grayscale images with size (488, 650), (650, 488).
 Matching result is illustrated in figure 1 below. \
-As a comparison, official implementation from ```cv2``` spends only 2 seconds, matching result is illustrated in figure 2. \
+As a comparison, official implementation from ```cv2``` spends only 2 seconds, matching result is illustrated in figure 2.
 <p align="center">
-<img src="results/match_fig.png" width="700" alt="From scratch">
-<img src="results/cv2_matching.png" width="600" alt="cv2">
+<img src="results/match_fig.png" width="800" alt="From scratch">
+<img src="results/cv2_matching.png" width="500" alt="cv2">
 </p>
 
-Judging from the matching results, this implementation performs well, but is much slower.
+Judging from the matching results, as one can tell, over the testing images, the official ```cv2``` implementation is even worse than mine, obviously lots features in the upper left corner of the left image wert incorrectly matched to the features in the lower right corner of the right image, even though it's much efficient (two orders of magnitude faster).
 
 
 ## Requirements
-This implemenation requires only three three-party libraries: ```Numpy, pillow, matplotlib```. \
+This implemenation requires only three three-party libraries: ```Numpy, pillow, matplotlib```.
 - ```Numpy``` provides all array operation required in octaves, keypoints, orientations as well as descriptors building.
 - ```pillow``` provides images loading and resizing functions.
 - ```matplotlib``` provides visualization function.
